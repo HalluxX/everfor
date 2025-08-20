@@ -33,24 +33,24 @@ export const siteContent = {
         id: "essential",
         title: "Essential Legacy Session",
         description: "Our foundational package captures the essence of your family's story",
-        thumbnailUrl: "", // Will use placeholder design
-        videoUrl: "", // Your Essential intro video
+        thumbnailUrl: "/videos/essential-thumbnail.jpg", // Add your thumbnail image
+        videoUrl: "/videos/essential-intro.mp4", // Add your video file
         duration: "3:45"
       },
       {
         id: "signature", 
         title: "Signature Legacy Experience",
         description: "An elevated experience with extended storytelling",
-        thumbnailUrl: "", // Will use placeholder design
-        videoUrl: "", // Your Signature intro video
+        thumbnailUrl: "/videos/signature-thumbnail.jpg", // Add your thumbnail image
+        videoUrl: "/videos/signature-intro.mp4", // Add your video file
         duration: "4:20"
       },
       {
         id: "eternal",
         title: "Eternal Legacy Collection", 
         description: "Our most comprehensive family archive offering",
-        thumbnailUrl: "", // Will use placeholder design
-        videoUrl: "", // Your Eternal intro video
+        thumbnailUrl: "/videos/eternal-thumbnail.jpg", // Add your thumbnail image
+        videoUrl: "/videos/eternal-intro.mp4", // Add your video file
         duration: "5:15"
       }
     ]
@@ -60,7 +60,7 @@ export const siteContent = {
   profile: {
     name: "Your Name",
     title: "Legacy Storyteller & Filmmaker",
-    imageUrl: "/api/placeholder/300/300", // Replace with your actual profile photo path
+    imageUrl: "/profile.jpg", // Add your profile photo to the public folder
     bio: "With over a decade of experience in documentary filmmaking, I specialize in capturing the intimate stories that define our families. Every session is approached with reverence, patience, and a deep understanding of the precious nature of these conversations."
   },
 

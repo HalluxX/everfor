@@ -8,19 +8,21 @@ All content is managed through one file: `client/src/config/content.ts`
 
 ### Updating Video Gallery
 
-1. **Get your YouTube video ID**:
-   - From `https://youtube.com/watch?v=ABC123` → the ID is `ABC123`
+1. **Add your video files**:
+   - Place your video files in the `client/public/videos/` folder
+   - Supported formats: MP4, WebM, OGV
+   - Recommended: MP4 with H.264 encoding for best compatibility
 
 2. **Update the videos in content.ts**:
    ```typescript
    videos: [
      {
-       id: "1",
-       title: "Your Video Title",
-       description: "Brief description of the video",
-       thumbnailUrl: "https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg",
-       videoUrl: "https://www.youtube.com/embed/YOUR_VIDEO_ID",
-       duration: "5:30"
+       id: "essential",
+       title: "Essential Legacy Session",
+       description: "Our foundational package captures the essence of your family's story",
+       thumbnailUrl: "/videos/essential-thumbnail.jpg", // Your thumbnail image
+       videoUrl: "/videos/essential-intro.mp4", // Your video file
+       duration: "3:45"
      }
    ]
    ```
