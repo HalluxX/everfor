@@ -1,0 +1,211 @@
+/* EVERfor Website Styles */
+
+/* Custom Properties */
+:root {
+    --gold: #E6B73A;
+    --gold-light: #F4D03F;
+    --navy: #3A4A66;
+    --deep-charcoal: #2C3E50;
+    --cream: #FDFCF5;
+    --warm-gray: #7F8C8D;
+}
+
+/* Tailwind Custom Colors */
+.text-gold { color: var(--gold); }
+.bg-gold { background-color: var(--gold); }
+.border-gold { border-color: var(--gold); }
+
+/* Typography */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navigation */
+.nav-link {
+    @apply text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200;
+}
+
+.mobile-nav-link {
+    @apply block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors duration-200;
+}
+
+/* Buttons */
+.btn-primary {
+    @apply bg-gold hover:bg-gold-light text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
+}
+
+.btn-secondary {
+    @apply bg-white hover:bg-gray-50 text-gray-900 font-semibold py-3 px-6 rounded-lg border-2 border-gray-300 hover:border-gray-400 transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
+}
+
+/* Service Cards */
+.service-card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100;
+}
+
+.service-card.featured {
+    @apply ring-2 ring-gold ring-opacity-20 shadow-xl;
+}
+
+.service-card.featured::before {
+    content: '';
+    @apply absolute -top-1 -left-1 -right-1 -bottom-1 bg-gradient-to-r from-gold to-gold-light rounded-2xl opacity-20 -z-10;
+}
+
+/* Video Cards */
+.video-card {
+    @apply bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1;
+}
+
+/* Form Elements */
+.form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-200;
+}
+
+.form-input:focus {
+    @apply outline-none;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+#mobile-menu.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
+
+#mobile-menu:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+/* Hover Effects */
+.service-card:hover {
+    @apply shadow-2xl;
+}
+
+.video-card:hover {
+    @apply shadow-xl;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .service-card {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Loading States */
+.btn-primary:disabled {
+    @apply opacity-50 cursor-not-allowed;
+}
+
+/* Focus States for Accessibility */
+.btn-primary:focus,
+.btn-secondary:focus,
+.form-input:focus {
+    @apply outline-none ring-2 ring-gold ring-opacity-50;
+}
+
+/* Print Styles */
+@media print {
+    .btn-primary,
+    .btn-secondary,
+    #mobile-menu-button,
+    #mobile-menu {
+        display: none !important;
+    }
+    
+    body {
+        color: black !important;
+        background: white !important;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    :root {
+        --gold: #B8860B;
+        --gold-light: #DAA520;
+    }
+    
+    .btn-primary {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+    /* You can add dark mode styles here if desired */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gold-light);
+}
+
+/* Selection Color */
+::selection {
+    background: var(--gold);
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--gold);
+    color: white;
+}
