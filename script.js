@@ -48,6 +48,26 @@ function scrollToGallery() {
     }
 }
 
+function scrollToServices() {
+    const servicesSection = document.getElementById('services');
+    if (servicesSection) {
+        servicesSection.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
+function scrollToTestimonials() {
+    const testimonialsSection = document.getElementById('testimonials');
+    if (testimonialsSection) {
+        testimonialsSection.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
+
 // Smooth scrolling for all navigation links
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('a[href^="#"]');

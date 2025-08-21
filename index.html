@@ -20,34 +20,39 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-deep-charcoal text-cream">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <nav class="fixed top-0 w-full bg-deep-charcoal/95 backdrop-blur-sm border-b border-gold/20 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <h1 class="text-2xl font-bold text-gray-900 font-playfair">EVERfor</h1>
-                </div>
-                
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#hero" class="nav-link">Home</a>
-                        <a href="#services" class="nav-link">Services</a>
-                        <a href="#gallery" class="nav-link">Gallery</a>
-                        <a href="#process" class="nav-link">How It Works</a>
-                        <a href="#contact" class="nav-link">Contact</a>
+                    <div class="flex items-center">
+                        <span class="text-2xl text-gold mr-2">∞</span>
+                        <h1 class="text-2xl font-bold text-cream">
+                            <span class="font-playfair">EVER</span><span class="font-inter">for</span>
+                        </h1>
                     </div>
                 </div>
                 
                 <div class="hidden md:block">
-                    <button onclick="scrollToContact()" class="btn-primary">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#hero" class="text-cream hover:text-gold px-3 py-2 text-sm font-medium transition-colors duration-200">Home</a>
+                        <a href="#services" class="text-cream hover:text-gold px-3 py-2 text-sm font-medium transition-colors duration-200">Services</a>
+                        <a href="#process" class="text-cream hover:text-gold px-3 py-2 text-sm font-medium transition-colors duration-200">How It Works</a>
+                        <a href="#about" class="text-cream hover:text-gold px-3 py-2 text-sm font-medium transition-colors duration-200">About</a>
+                        <a href="#contact" class="text-cream hover:text-gold px-3 py-2 text-sm font-medium transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <button onclick="scrollToContact()" class="bg-gold text-deep-charcoal font-semibold px-6 py-2 rounded-lg hover:bg-gold-light transition-all duration-300">
                         Book a Legacy Session
                     </button>
                 </div>
                 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900">
+                    <button id="mobile-menu-button" class="text-cream hover:text-gold">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -58,13 +63,13 @@
         
         <!-- Mobile menu -->
         <div id="mobile-menu" class="md:hidden hidden">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
-                <a href="#hero" class="mobile-nav-link">Home</a>
-                <a href="#services" class="mobile-nav-link">Services</a>
-                <a href="#gallery" class="mobile-nav-link">Gallery</a>
-                <a href="#process" class="mobile-nav-link">How It Works</a>
-                <a href="#contact" class="mobile-nav-link">Contact</a>
-                <button onclick="scrollToContact()" class="btn-primary w-full mt-4">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-deep-charcoal border-t border-gold/20">
+                <a href="#hero" class="block px-3 py-2 text-base font-medium text-cream hover:text-gold hover:bg-deep-charcoal rounded-md transition-colors duration-200">Home</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-cream hover:text-gold hover:bg-deep-charcoal rounded-md transition-colors duration-200">Services</a>
+                <a href="#process" class="block px-3 py-2 text-base font-medium text-cream hover:text-gold hover:bg-deep-charcoal rounded-md transition-colors duration-200">How It Works</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-cream hover:text-gold hover:bg-deep-charcoal rounded-md transition-colors duration-200">About</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-cream hover:text-gold hover:bg-deep-charcoal rounded-md transition-colors duration-200">Contact</a>
+                <button onclick="scrollToContact()" class="bg-gold text-deep-charcoal font-semibold px-6 py-2 rounded-lg hover:bg-gold-light transition-all duration-300 w-full mt-4">
                     Book a Legacy Session
                 </button>
             </div>
@@ -72,24 +77,159 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="pt-24 pb-16 bg-gradient-to-br from-gray-50 to-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 font-playfair leading-tight">
-                    Their stories deserve
-                    <span class="text-gold">to live forever.</span>
-                </h1>
-                <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
-                    Reverent conversations that become timeless keepsakes.<br>
-                    Preserve the voices and wisdom of those you cherish most.
+    <section id="hero" class="min-h-screen flex items-center justify-center hero-gradient">
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <h1 class="font-playfair text-5xl md:text-7xl font-normal text-cream mb-8 leading-tight">
+                Their stories deserve
+                <span class="block text-gold font-medium mt-2">to live forever.</span>
+            </h1>
+            
+            <div class="text-xl md:text-2xl mb-12 leading-relaxed text-cream/90 max-w-3xl mx-auto">
+                <p class="mb-3">Reverent conversations that become timeless keepsakes.</p>
+                <p>Preserve the voices and wisdom of those you cherish most.</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <button onclick="scrollToContact()" class="bg-gold text-deep-charcoal font-semibold px-10 py-4 rounded-lg text-lg hover:bg-gold-light transition-all duration-300 shadow-lg hover:shadow-xl">
+                    Book a Legacy Session
+                </button>
+                
+                <button onclick="scrollToServices()" class="bg-transparent border-2 border-cream text-cream font-medium px-10 py-4 rounded-lg text-lg hover:bg-cream hover:text-deep-charcoal transition-all duration-300">
+                    See Our Packages
+                </button>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="text-cream/60 h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Legacy Description Section -->
+    <section class="py-20 bg-cream">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-deep-charcoal mb-8 font-playfair">
+                A legacy you can see, hear, and feel
+            </h2>
+            <div class="space-y-6 text-lg text-warm-gray leading-relaxed max-w-2xl mx-auto">
+                <p>Not a home video.</p>
+                <p>Not a journal in a drawer.</p>
+                <p class="font-medium text-deep-charcoal">EVERfor captures a person—who they are, how they speak, what they believe.</p>
+                <p>A timeless record of their story, filmed with care, reverence, and cinematic precision.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="process" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-deep-charcoal mb-6 font-playfair">
+                    How It Works
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-8 bg-gold/10 rounded-full flex items-center justify-center">
+                        <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-deep-charcoal mb-4">Schedule</h3>
+                    <p class="text-warm-gray leading-relaxed">
+                        A simple call to understand your family's needs and create the perfect environment for authentic storytelling.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-8 bg-gold/10 rounded-full flex items-center justify-center">
+                        <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-deep-charcoal mb-4">Film</h3>
+                    <p class="text-warm-gray leading-relaxed">
+                        We interview and film with reverent, cinematic care in the comfort of your chosen space.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto mb-8 bg-gold/10 rounded-full flex items-center justify-center">
+                        <svg class="w-10 h-10 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-deep-charcoal mb-4">Deliver</h3>
+                    <p class="text-warm-gray leading-relaxed">
+                        You receive a beautifully edited heirloom to share and treasure for generations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preserving Stories Section -->
+    <section class="py-20 bg-deep-charcoal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-cream mb-6 font-playfair">
+                    Preserving Stories, One Family at a Time
+                </h2>
+                <p class="text-xl text-warm-gray max-w-3xl mx-auto">
+                    Every conversation tells a story worth remembering.<br>
+                    See how we help families capture these precious moments<br>
+                    with cinematic quality and heartfelt authenticity.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button onclick="scrollToContact()" class="btn-primary text-lg px-8 py-4">
-                        Book a Legacy Session
-                    </button>
-                    <button onclick="scrollToGallery()" class="btn-secondary text-lg px-8 py-4">
-                        See Our Work
-                    </button>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Essential Video -->
+                <div class="bg-cream rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="bg-navy rounded-lg aspect-video mb-4 flex items-center justify-center">
+                        <div class="text-center">
+                            <svg class="h-16 w-16 text-gold mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                            </svg>
+                            <p class="text-gold">Essential Intro Video</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-deep-charcoal mb-2">Essential Legacy Session</h3>
+                    <p class="text-warm-gray mb-3">Our foundational package captures the essence of your family's story</p>
+                    <div class="text-sm text-warm-gray">Duration: 3:45</div>
+                </div>
+
+                <!-- Signature Video -->
+                <div class="bg-cream rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="bg-navy rounded-lg aspect-video mb-4 flex items-center justify-center">
+                        <div class="text-center">
+                            <svg class="h-16 w-16 text-gold mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                            </svg>
+                            <p class="text-gold">Signature Intro Video</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-deep-charcoal mb-2">Signature Legacy Experience</h3>
+                    <p class="text-warm-gray mb-3">An elevated experience with extended storytelling</p>
+                    <div class="text-sm text-warm-gray">Duration: 4:20</div>
+                </div>
+
+                <!-- Eternal Video -->
+                <div class="bg-cream rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="bg-navy rounded-lg aspect-video mb-4 flex items-center justify-center">
+                        <div class="text-center">
+                            <svg class="h-16 w-16 text-gold mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                            </svg>
+                            <p class="text-gold">Eternal Intro Video</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-deep-charcoal mb-2">Eternal Legacy Collection</h3>
+                    <p class="text-warm-gray mb-3">Our most comprehensive family archive offering</p>
+                    <div class="text-sm text-warm-gray">Duration: 5:15</div>
                 </div>
             </div>
         </div>
@@ -99,343 +239,652 @@
     <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-playfair">
-                    Thoughtfully Crafted Packages
+                <!-- Profile Image -->
+                <h2 class="text-4xl md:text-5xl font-bold text-deep-charcoal mb-6 font-playfair">
+                    Choose Your Legacy Package
                 </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Each package is designed to honor your family's story with the care and attention it deserves.
+                <p class="text-xl text-warm-gray max-w-3xl mx-auto">
+                    Each package is designed to honor your family's unique story with the consideration it deserves.
                 </p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Essential Package -->
-                <div class="service-card">
-                    <div class="text-center p-8">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Essential</h3>
+                <div class="bg-cream rounded-2xl p-8 service-card-hover">
+                    <div class="text-center mb-8">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="text-gold h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-deep-charcoal mb-2">Essential</h3>
                         <div class="text-4xl font-bold text-gold mb-2">$5,000</div>
-                        <div class="text-gray-600 mb-6">Half-day session</div>
-                        <ul class="text-left space-y-3 mb-8">
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                2-3 hour intimate conversation
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Professional lighting & audio
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Single edited video (30-45 minutes)
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Digital delivery & cloud backup
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Basic color correction & audio enhancement
-                            </li>
-                        </ul>
-                        <button onclick="scrollToContact()" class="btn-primary w-full">
-                            Book Essential Session
-                        </button>
+                        <p class="text-warm-gray">Perfect for capturing core family stories</p>
                     </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-deep-charcoal">2-hour intimate storytelling session</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-deep-charcoal">Professional lighting & audio setup</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-deep-charcoal">15-minute edited legacy film</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-deep-charcoal">Digital delivery in multiple formats</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-deep-charcoal">Cloud backup & archival</span>
+                        </li>
+                    </ul>
+                    
+                    <button onclick="scrollToContact()" class="w-full bg-gradient-gold text-deep-charcoal font-semibold py-4 rounded-lg hover:shadow-lg transition-all duration-300">
+                        Choose Essential
+                    </button>
                 </div>
 
                 <!-- Signature Package -->
-                <div class="service-card featured">
-                    <div class="text-center p-8">
-                        <div class="bg-gold text-white text-sm font-semibold px-3 py-1 rounded-full mb-4 inline-block">Most Popular</div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Signature</h3>
-                        <div class="text-4xl font-bold text-gold mb-2">$10,000</div>
-                        <div class="text-gray-600 mb-6">Full-day experience</div>
-                        <ul class="text-left space-y-3 mb-8">
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                6-8 hour comprehensive session
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Cinematic multi-camera setup
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Multiple edited segments
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Professional documentary-style editing
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Custom music & sound design
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Physical keepsake box with USB drive
-                            </li>
-                        </ul>
-                        <button onclick="scrollToContact()" class="btn-primary w-full">
-                            Book Signature Session
-                        </button>
+                <div class="relative bg-navy border-2 border-gold rounded-2xl p-8 service-card-hover">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <div class="bg-gold text-navy px-6 py-2 rounded-full text-sm font-semibold">
+                            Most Popular
+                        </div>
                     </div>
+                    
+                    <div class="text-center mb-8">
+                        <div class="w-16 h-16 bg-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="text-navy h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-cream mb-2">Signature</h3>
+                        <div class="text-4xl font-bold text-gold mb-2">$10,000</div>
+                        <p class="text-gold-light">Comprehensive storytelling experience</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-cream">4-hour storytelling sessions (2 visits)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-cream">Cinema-quality equipment & crew</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-cream">30-minute cinematic legacy film</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-cream">Raw interview footage included</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-cream">Custom music & color grading</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-cream">Physical keepsake package</span>
+                        </li>
+                    </ul>
+                    
+                    <button onclick="scrollToContact()" class="w-full bg-gradient-gold text-navy font-semibold py-4 rounded-lg hover:shadow-lg transition-all duration-300">
+                        Choose Signature
+                    </button>
                 </div>
 
                 <!-- Eternal Package -->
-                <div class="service-card">
-                    <div class="text-center p-8">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Eternal</h3>
+                <div class="bg-cream rounded-2xl p-8 service-card-hover">
+                    <div class="text-center mb-8">
+                        <div class="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="text-gold h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-deep-charcoal mb-2">Eternal</h3>
                         <div class="text-4xl font-bold text-gold mb-2">$20,000</div>
-                        <div class="text-gray-600 mb-6">Multi-day storytelling</div>
-                        <ul class="text-left space-y-3 mb-8">
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Multiple sessions over several days
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Extended family participation
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Location shooting (home, meaningful places)
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Archival photo/video integration
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Professional documentary production
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Multiple format deliverables
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="h-5 w-5 text-gold mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                                </svg>
-                                Lifetime storage & access guarantee
-                            </li>
-                        </ul>
-                        <button onclick="scrollToContact()" class="btn-primary w-full">
-                            Book Eternal Session
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Gallery Section -->
-    <section id="gallery" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-playfair">
-                    Preserving Stories, One Family at a Time
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Every conversation tells a story worth remembering.<br>
-                    See how we help families capture these precious moments<br>
-                    with cinematic quality and heartfelt authenticity.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Essential Video -->
-                <div class="video-card">
-                    <div class="bg-gray-200 rounded-lg aspect-video mb-4 flex items-center justify-center">
-                        <div class="text-center">
-                            <svg class="h-16 w-16 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
-                            </svg>
-                            <p class="text-gray-500">Essential Intro Video</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Essential Legacy Session</h3>
-                    <p class="text-gray-600 mb-3">Our foundational package captures the essence of your family's story</p>
-                    <div class="text-sm text-gray-500">Duration: 3:45</div>
-                </div>
-
-                <!-- Signature Video -->
-                <div class="video-card">
-                    <div class="bg-gray-200 rounded-lg aspect-video mb-4 flex items-center justify-center">
-                        <div class="text-center">
-                            <svg class="h-16 w-16 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
-                            </svg>
-                            <p class="text-gray-500">Signature Intro Video</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Signature Legacy Experience</h3>
-                    <p class="text-gray-600 mb-3">An elevated experience with extended storytelling</p>
-                    <div class="text-sm text-gray-500">Duration: 4:20</div>
-                </div>
-
-                <!-- Eternal Video -->
-                <div class="video-card">
-                    <div class="bg-gray-200 rounded-lg aspect-video mb-4 flex items-center justify-center">
-                        <div class="text-center">
-                            <svg class="h-16 w-16 text-gray-400 mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
-                            </svg>
-                            <p class="text-gray-500">Eternal Intro Video</p>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Eternal Legacy Collection</h3>
-                    <p class="text-gray-600 mb-3">Our most comprehensive family archive offering</p>
-                    <div class="text-sm text-gray-500">Duration: 5:15</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section id="process" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-playfair">
-                    A Gentle Process, Extraordinary Results
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    We believe the best stories emerge when families feel completely comfortable and unhurried.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <div class="bg-gold text-white text-3xl font-bold rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">01</div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Schedule & Plan</h3>
-                    <p class="text-gray-600">
-                        We start with a thoughtful conversation about your family's story, what matters most to preserve, and how we can create the perfect environment for authentic sharing.
-                    </p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="bg-gold text-white text-3xl font-bold rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">02</div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Film with Care</h3>
-                    <p class="text-gray-600">
-                        In the comfort of your chosen space, we create a warm, intimate setting where stories flow naturally. Our unobtrusive approach ensures genuine moments are captured beautifully.
-                    </p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="bg-gold text-3xl font-bold rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 text-white">03</div>
-                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Deliver Memories</h3>
-                    <p class="text-gray-600">
-                        Your finished video is crafted with the same care as the conversation itself—thoughtfully edited, beautifully presented, and delivered as a treasured keepsake for generations.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-playfair">
-                    Ready to Preserve Your Family's Story?
-                </h2>
-                <p class="text-xl text-gray-600">
-                    Let's start the conversation about capturing the moments that matter most.
-                </p>
-            </div>
-            
-            <!-- Netlify Form -->
-            <form name="contact" method="POST" data-netlify="true" class="space-y-6">
-                <input type="hidden" name="form-name" value="contact" />
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-                        <input type="text" id="name" name="name" required class="form-input">
+                        <p class="text-warm-gray">The ultimate legacy preservation</p>
                     </div>
                     
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-                        <input type="email" id="email" name="email" required class="form-input">
-                    </div>
-                </div>
-                
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" class="form-input">
-                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-deep-charcoal">6-hour storytelling sessions (3 visits)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-deep-charcoal">Multi-location filming options</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-deep-charcoal">60-minute documentary-style film</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-deep-charcoal">Family history research integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="text-gold mt-1 mr-3 h-5 w-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-deep-charcoal">Luxury presentation package</span>
+                        </li>
+                    </ul>
                     
-                    <div>
-                        <label for="package" class="block text-sm font-medium text-gray-700 mb-2">Package Interest</label>
-                        <select id="package" name="package" class="form-input">
-                            <option value="">Select a package</option>
-                            <option value="Essential">Essential ($5,000)</option>
-                            <option value="Signature">Signature ($10,000)</option>
-                            <option value="Eternal">Eternal ($20,000)</option>
-                            <option value="Not sure yet">Not sure yet</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div>
-                    <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Tell us about your family's story</label>
-                    <textarea id="message" name="message" rows="4" class="form-input" placeholder="What matters most to preserve? Who would you like to capture on video? Any special memories or stories you'd like to share?"></textarea>
-                </div>
-                
-                <div class="text-center">
-                    <button type="submit" class="btn-primary text-lg px-8 py-4">
-                        Send Message
+                    <button onclick="scrollToContact()" class="w-full bg-gradient-gold text-deep-charcoal font-semibold py-4 rounded-lg hover:shadow-lg transition-all duration-300">
+                        Choose Eternal
                     </button>
                 </div>
-            </form>
+            </div>
+            
+                         <!-- Additional Info -->
+             <div class="mt-12 text-center">
+                 <p class="text-warm-gray mb-4">
+                     All packages include lifetime technical support and format updates as technology evolves.
+                 </p>
+                 <button onclick="scrollToContact()" class="text-gold hover:text-gold-dark font-semibold underline">
+                     Not sure which package? Schedule a free consultation →
+                 </button>
+             </div>
+         </div>
+     </section>
+
+     <!-- Special Couples Pricing Section -->
+     <section class="py-20 bg-cream">
+         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="text-center mb-16">
+                 <!-- Couple Icon -->
+                 <div class="mb-8">
+                     <div class="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mx-auto">
+                         <svg class="w-12 h-12 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                             <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                         </svg>
+                     </div>
+                 </div>
+                 
+                 <h2 class="text-4xl md:text-5xl font-bold text-deep-charcoal mb-6 font-playfair">
+                     Special Couples Pricing
+                 </h2>
+                 <p class="text-xl text-warm-gray max-w-3xl mx-auto">
+                     When both partners want their story preserved, we make it more accessible.
+                 </p>
+             </div>
+             
+             <!-- Couple's Profiles -->
+             <div class="flex justify-center mb-16">
+                 <div class="flex gap-8">
+                     <!-- Jack's Profile -->
+                     <div class="text-center">
+                         <div class="w-32 h-32 rounded-2xl overflow-hidden mb-4 shadow-lg">
+                             <img src="images/legacy-family.jpg" alt="Jack Earl Chartier" class="w-full h-full object-cover">
+                         </div>
+                         <h3 class="text-xl font-semibold text-deep-charcoal mb-2">Jack Earl Chartier</h3>
+                         <p class="text-warm-gray">Essential</p>
+                     </div>
+                     
+                     <!-- Nita's Profile -->
+                     <div class="text-center">
+                         <div class="w-32 h-32 rounded-2xl overflow-hidden mb-4 shadow-lg">
+                             <img src="images/legacy-family.jpg" alt="Nita Fern Chartier" class="w-full h-full object-cover">
+                         </div>
+                         <h3 class="text-xl font-semibold text-deep-charcoal mb-2">Nita Fern Chartier</h3>
+                         <p class="text-warm-gray">Essential</p>
+                     </div>
+                 </div>
+             </div>
+             
+             <!-- Shared Legacy Sessions Card -->
+             <div class="bg-navy rounded-3xl p-8 shadow-2xl">
+                 <div class="grid lg:grid-cols-2 gap-12 items-start">
+                     <!-- Left Section - Shared Legacy Sessions -->
+                     <div class="space-y-6">
+                         <h3 class="text-3xl font-bold text-cream font-playfair">
+                             Shared Legacy Sessions
+                         </h3>
+                         <p class="text-cream leading-relaxed text-lg">
+                             This wonderful couple each wanted their individual stories captured. We save significant production expense by filming back to back sessions; a 25% value!
+                         </p>
+                         
+                         <ul class="space-y-4">
+                             <li class="flex items-start gap-3">
+                                 <div class="w-3 h-3 bg-gold rounded-full mt-2 flex-shrink-0"></div>
+                                 <span class="text-cream">Two complete individual legacy sessions</span>
+                             </li>
+                             <li class="flex items-start gap-3">
+                                 <div class="w-3 h-3 bg-gold rounded-full mt-2 flex-shrink-0"></div>
+                                 <span class="text-cream">Professional setup for both conversations</span>
+                             </li>
+                             <li class="flex items-start gap-3">
+                                 <div class="w-3 h-3 bg-gold rounded-full mt-2 flex-shrink-0"></div>
+                                 <span class="text-cream">Two separate edited legacy films</span>
+                             </li>
+                         </ul>
+                     </div>
+                     
+                     <!-- Right Section - Pricing Table -->
+                     <div class="bg-white rounded-2xl p-6">
+                         <div class="grid grid-cols-3 gap-4 text-center">
+                             <!-- Essential Column -->
+                             <div class="space-y-2">
+                                 <h4 class="font-semibold text-deep-charcoal">Essential</h4>
+                                 <div class="text-sm text-warm-gray line-through">$10,000</div>
+                                 <div class="text-2xl font-bold text-deep-charcoal">$7,500</div>
+                                 <div class="text-sm text-warm-gray">for both sessions</div>
+                             </div>
+                             
+                             <!-- Signature Column -->
+                             <div class="space-y-2">
+                                 <h4 class="font-semibold text-deep-charcoal">Signature</h4>
+                                 <div class="text-sm text-warm-gray line-through">$20,000</div>
+                                 <div class="text-2xl font-bold text-deep-charcoal">$15,000</div>
+                                 <div class="text-sm text-warm-gray">for both sessions</div>
+                             </div>
+                             
+                             <!-- Eternal Column -->
+                             <div class="space-y-2">
+                                 <h4 class="font-semibold text-deep-charcoal">Eternal</h4>
+                                 <div class="text-sm text-warm-gray line-through">$40,000</div>
+                                 <div class="text-2xl font-bold text-deep-charcoal">$30,000</div>
+                                 <div class="text-sm text-warm-gray">for both sessions</div>
+                             </div>
+                         </div>
+                         
+                         <!-- Savings Info -->
+                         <div class="mt-6 pt-6 border-t border-gray-200 text-center">
+                             <div class="text-lg font-semibold text-deep-charcoal mb-2">25% savings on all packages</div>
+                             <div class="text-deep-charcoal mb-1">Save $2,500 - $10,000</div>
+                             <div class="text-sm text-warm-gray">Since we're already on location</div>
+                         </div>
+                         
+                         <!-- CTA Button -->
+                         <button onclick="scrollToContact()" class="w-full bg-gold text-deep-charcoal font-semibold py-4 rounded-lg hover:bg-gold-light transition-all duration-300 flex items-center justify-center gap-3 mt-6">
+                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                             </svg>
+                             Discuss Couples Pricing
+                                                   </button>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Built to Last Forever Section -->
+              <div class="mt-16">
+                  <!-- Top Section - Built to Last Forever -->
+                  <div class="bg-cream rounded-3xl p-8 mb-8">
+                      <div class="text-center mb-12">
+                          <h3 class="text-3xl font-bold text-deep-charcoal mb-6 font-playfair">
+                              Built to Last Forever
+                          </h3>
+                          <p class="text-lg text-warm-gray max-w-3xl mx-auto">
+                              Your family's legacy deserves the highest level of protection. We use enterprise-grade storage systems to ensure your videos remain safe for generations to come.
+                          </p>
+                      </div>
+                      
+                      <!-- Four Feature Blocks -->
+                      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                          <!-- AWS Glacier Deep Archive -->
+                          <div class="text-center">
+                              <div class="w-16 h-16 mx-auto mb-4 bg-gold/10 rounded-full flex items-center justify-center">
+                                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                                  </svg>
+                              </div>
+                              <h4 class="font-semibold text-deep-charcoal mb-2">AWS Glacier Deep Archive</h4>
+                              <p class="text-sm text-warm-gray">Ultra-secure cloud storage designed for long-term preservation with 99.999999999% durability</p>
+                          </div>
+                          
+                          <!-- RAID NAS Systems -->
+                          <div class="text-center">
+                              <div class="w-16 h-16 mx-auto mb-4 bg-gold/10 rounded-full flex items-center justify-center">
+                                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                                  </svg>
+                              </div>
+                              <h4 class="font-semibold text-deep-charcoal mb-2">RAID NAS Systems</h4>
+                              <p class="text-sm text-warm-gray">Redundant local storage with automatic backup ensures immediate access and hardware failure protection</p>
+                          </div>
+                          
+                          <!-- Geographic Redundancy -->
+                          <div class="text-center">
+                              <div class="w-16 h-16 mx-auto mb-4 bg-gold/10 rounded-full flex items-center justify-center">
+                                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                  </svg>
+                              </div>
+                              <h4 class="font-semibold text-deep-charcoal mb-2">Geographic Redundancy</h4>
+                              <p class="text-sm text-warm-gray">Your videos are stored across multiple geographic locations to protect against regional disasters</p>
+                          </div>
+                          
+                          <!-- Lifetime Guarantee -->
+                          <div class="text-center">
+                              <div class="w-16 h-16 mx-auto mb-4 bg-gold/10 rounded-full flex items-center justify-center">
+                                  <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                  </svg>
+                              </div>
+                              <h4 class="font-semibold text-deep-charcoal mb-2">Lifetime Guarantee</h4>
+                              <p class="text-sm text-warm-gray">We maintain and migrate your files as technology evolves, ensuring access for future generations</p>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <!-- Bottom Section - Enterprise-Grade Protection -->
+                  <div class="bg-navy rounded-3xl p-8">
+                      <div class="text-center mb-8">
+                          <h4 class="text-2xl font-bold text-cream mb-4">
+                              Enterprise-Grade Protection
+                          </h4>
+                          <p class="text-cream text-lg">
+                              The same technology trusted by Fortune 500 companies to protect their most valuable data
+                          </p>
+                      </div>
+                      
+                      <!-- Three Key Metrics -->
+                      <div class="grid md:grid-cols-3 gap-8 text-center">
+                          <div>
+                              <div class="text-4xl font-bold text-gold mb-2">99.999999999%</div>
+                              <div class="text-cream">Data Durability Rating</div>
+                          </div>
+                          <div>
+                              <div class="text-4xl font-bold text-gold mb-2">3+ Copies</div>
+                              <div class="text-cream">Of Every File Stored</div>
+                          </div>
+                          <div>
+                              <div class="text-4xl font-bold text-gold mb-2">24/7</div>
+                              <div class="text-cream">Monitoring & Maintenance</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <!-- Why I Created EVERfor Section -->
+      <section class="py-20 bg-cream">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="grid lg:grid-cols-2 gap-12 items-center">
+                  <!-- Left Column - Image -->
+                  <div class="text-center lg:text-left">
+                      <div class="max-w-md mx-auto lg:mx-0">
+                          <img src="images/legacy-family.jpg" alt="Founder with grandmother" class="w-full rounded-2xl shadow-lg">
+                      </div>
+                  </div>
+                  
+                  <!-- Right Column - Text Content -->
+                  <div class="space-y-6">
+                      <h2 class="text-4xl md:text-5xl font-bold text-deep-charcoal font-playfair">
+                          Why I Created EVERfor
+                      </h2>
+                      
+                      <div class="space-y-4 text-lg text-deep-charcoal leading-relaxed">
+                          <p>I lost my grandmother before I ever thought to record her voice.</p>
+                          <p>Not just her stories—her presence.</p>
+                          <p>And when she was gone, there was no going back.</p>
+                          <p class="font-semibold">EVERfor was born from that silence.</p>
+                          <p>This isn't nostalgia. This is preservation.</p>
+                          <p>This is legacy, captured while it still breathes.</p>
+                          <p>One story at a time, filmed with intention, clarity, and care.</p>
+                          <p>I don't make tribute videos.</p>
+                          <p>I create heirlooms that speak—for decades.</p>
+                          <p>So the people we love don't vanish into memory.</p>
+                          <p class="text-2xl font-bold text-deep-charcoal">They stay.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-deep-charcoal mb-6 font-playfair">
+                    What Families Are Saying
+                </h2>
+                <p class="text-xl text-warm-gray max-w-3xl mx-auto">
+                    The true measure of our work is in the hearts we touch and the legacies we preserve.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <!-- Jodi Burch Testimonial -->
+                <div class="bg-cream p-8 rounded-2xl shadow-lg">
+                    <div class="text-6xl text-warm-gray mb-4">"</div>
+                    <p class="text-deep-charcoal leading-relaxed mb-6 text-lg">
+                        EVERfor beautifully captured many moments of laughter, family history, love, wisdom, and memories that I will cherish and watch over and over for the rest of my life. His ability to choose the right questions for my parents was exceptional. Hearing their words of wisdom, advice, and family pride in their voices is priceless. I will always treasure these videos.
+                    </p>
+                    <div class="flex items-center">
+                        <img src="images/profile.jpg" alt="Jodi Burch" class="w-12 h-12 rounded-full object-cover mr-3">
+                        <span class="text-deep-charcoal font-medium">Jodi Burch</span>
+                    </div>
+                </div>
+                
+                <!-- Julie Chartier Brown Testimonial -->
+                <div class="bg-cream p-8 rounded-2xl shadow-lg">
+                    <div class="text-6xl text-warm-gray mb-4">"</div>
+                    <p class="text-deep-charcoal leading-relaxed mb-6 text-lg">
+                        EVERfor... you have forEVER made some very precious moments, and stories, alive for me and my family! I had no idea how grateful I am to have these videos made...they are priceless now...but will be true treasures in the future. Thank you so much for your insight on the impact these will be to our family now, and forever.
+                    </p>
+                    <div class="flex items-center">
+                        <img src="images/profile.jpg" alt="Julie Chartier Brown" class="w-12 h-12 rounded-full object-cover mr-3">
+                        <span class="text-deep-charcoal font-medium">Julie Chartier Brown</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="text-center">
+                <p class="text-deep-charcoal text-xl mb-6">
+                    Ready to preserve your family's most precious stories?
+                </p>
+                <button onclick="scrollToContact()" class="bg-gold text-deep-charcoal font-semibold px-8 py-4 rounded-lg hover:bg-gold-light transition-all duration-300 flex items-center justify-center gap-3 mx-auto text-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    Schedule Your Free Consultation
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section id="contact" class="py-20 bg-deep-charcoal">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                
+                <!-- Left Column - Contact Form -->
+                <div class="bg-navy/30 rounded-2xl p-8 border border-gold/20">
+                    <h2 class="text-3xl md:text-4xl font-bold text-cream mb-8 font-playfair">
+                        Get In Touch
+                    </h2>
+                    
+                    <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+                        <input type="hidden" name="form-name" value="contact" />
+                        
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-cream mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-white text-deep-charcoal border border-gold/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-cream mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-white text-deep-charcoal border border-gold/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-cream mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 bg-white text-deep-charcoal border border-gold/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-200">
+                        </div>
+                        
+                        <div>
+                            <label for="package" class="block text-sm font-medium text-cream mb-2">Interested Package</label>
+                            <select id="package" name="package" class="w-full px-4 py-3 bg-white text-deep-charcoal border border-gold/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-200">
+                                <option value="">Please select...</option>
+                                <option value="Essential">Essential ($5,000)</option>
+                                <option value="Signature">Signature ($10,000)</option>
+                                <option value="Eternal">Eternal ($20,000)</option>
+                                <option value="Not sure yet">Not sure yet</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-cream mb-2">Tell us about your family's story</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-white text-deep-charcoal border border-gold/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-200" placeholder="Share what makes your family's legacy special..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gold text-deep-charcoal font-semibold py-4 rounded-lg hover:bg-gold-light transition-all duration-300 flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Right Column - Information & CTA -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-cream mb-6 font-playfair">
+                            Ready to Get Started?
+                        </h2>
+                        <p class="text-lg text-warm-gray leading-relaxed">
+                            Time is precious, and every day we wait is another day of stories that might be lost. Let's schedule your consultation and begin preserving your family's most treasured memories.
+                        </p>
+                    </div>
+                    
+                    <button onclick="scrollToContact()" class="w-full bg-gold text-deep-charcoal font-semibold py-4 rounded-lg hover:bg-gold-light transition-all duration-300 flex items-center justify-center gap-3 text-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                        Book Free Video Consultation
+                    </button>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span class="text-cream">blake@everfor.family</span>
+                        </div>
+                        
+                        <div class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span class="text-cream">Within 24 hours</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Don't Wait Too Long Box -->
+                    <div class="bg-cream/10 border border-gold/30 rounded-xl p-6">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-gold flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <div>
+                                <h3 class="text-lg font-semibold text-cream mb-2">Don't Wait Too Long</h3>
+                                <p class="text-warm-gray leading-relaxed">
+                                    Every week, families reach out wishing they had started this process sooner. The best time to preserve your family's stories is now, while everyone is healthy and the memories are fresh.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-deep-charcoal text-cream py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <h3 class="text-2xl font-bold mb-4 font-playfair">EVERfor</h3>
-                <p class="text-gray-400 mb-6">
-                    Professional family legacy video preservation services
-                </p>
-                <p class="text-gray-500 text-sm">
-                    Contact: blake@everfor.family
-                </p>
+            <!-- Main Footer Content -->
+            <div class="grid lg:grid-cols-3 gap-12 mb-12">
+                
+                <!-- Left Column - Brand Identity -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <span class="text-2xl text-gold mr-2">∞</span>
+                        <h3 class="text-2xl font-bold text-cream">
+                            <span class="font-playfair">EVER</span><span class="font-inter">for</span>
+                        </h3>
+                    </div>
+                    <p class="text-cream leading-relaxed max-w-xs">
+                        Preserving family legacies with reverence and the understanding that every story matters.
+                    </p>
+                </div>
+                
+                <!-- Middle Column - Quick Links -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-cream">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#services" class="block text-cream hover:text-gold transition-colors duration-200">Services</a>
+                        <a href="#gallery" class="block text-cream hover:text-gold transition-colors duration-200">Gallery</a>
+                        <a href="#about" class="block text-cream hover:text-gold transition-colors duration-200">About</a>
+                        <a href="#contact" class="block text-cream hover:text-gold transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Right Column - Get In Touch -->
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-cream">Get In Touch</h4>
+                    <p class="text-cream">blake@everfor.family</p>
+                    <button onclick="scrollToContact()" class="bg-gold text-deep-charcoal font-semibold px-6 py-3 rounded-lg hover:bg-gold-light transition-all duration-300">
+                        Book a Legacy Session
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Horizontal Separator -->
+            <div class="border-t border-gold/20 mb-8"></div>
+            
+            <!-- Bottom Section - Copyright and Tagline -->
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div class="text-cream text-sm">
+                    © 2024 EVERfor. All rights reserved.
+                </div>
+                
+                <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-gold rounded-full"></div>
+                    <span class="text-cream text-sm">Preserving legacies, one story at a time.</span>
+                </div>
             </div>
         </div>
     </footer>

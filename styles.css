@@ -4,10 +4,11 @@
 :root {
     --gold: #E6B73A;
     --gold-light: #F4D03F;
-    --navy: #3A4A66;
-    --deep-charcoal: #2C3E50;
-    --cream: #FDFCF5;
-    --warm-gray: #7F8C8D;
+    --navy: #2C3E50;
+    --deep-charcoal: #1a1a1a;
+    --cream: #F5F5DC;
+    --soft-beige: #F5F5DC;
+    --warm-gray: #9CA3AF;
 }
 
 /* Tailwind Custom Colors */
@@ -15,9 +16,29 @@
 .bg-gold { background-color: var(--gold); }
 .border-gold { border-color: var(--gold); }
 
+.text-navy { color: var(--navy); }
+.bg-navy { background-color: var(--navy); }
+.border-navy { border-color: var(--navy); }
+
+.text-deep-charcoal { color: var(--deep-charcoal); }
+.bg-deep-charcoal { background-color: var(--deep-charcoal); }
+
+.text-cream { color: var(--cream); }
+.bg-cream { background-color: var(--cream); }
+
+.text-soft-beige { color: var(--soft-beige); }
+.bg-soft-beige { background-color: var(--soft-beige); }
+
+.text-warm-gray { color: var(--warm-gray); }
+.bg-warm-gray { background-color: var(--warm-gray); }
+
 /* Typography */
 .font-playfair {
     font-family: 'Playfair Display', serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
 }
 
 /* Navigation */
@@ -25,8 +46,16 @@
     @apply text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200;
 }
 
+.nav-link-dark {
+    @apply text-cream hover:text-gold px-3 py-2 text-sm font-medium transition-colors duration-200;
+}
+
 .mobile-nav-link {
     @apply block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors duration-200;
+}
+
+.mobile-nav-link-dark {
+    @apply block px-3 py-2 text-base font-medium text-cream hover:text-gold hover:bg-deep-charcoal rounded-md transition-colors duration-200;
 }
 
 /* Buttons */
@@ -34,27 +63,22 @@
     @apply bg-gold hover:bg-gold-light text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
 }
 
+.btn-primary-dark {
+    @apply bg-gold hover:bg-gold-light text-navy font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
+}
+
 .btn-secondary {
     @apply bg-white hover:bg-gray-50 text-gray-900 font-semibold py-3 px-6 rounded-lg border-2 border-gray-300 hover:border-gray-400 transition-all duration-200 transform hover:scale-105 hover:shadow-lg;
 }
 
 /* Service Cards */
-.service-card {
-    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100;
-}
-
-.service-card.featured {
-    @apply ring-2 ring-gold ring-opacity-20 shadow-xl;
-}
-
-.service-card.featured::before {
-    content: '';
-    @apply absolute -top-1 -left-1 -right-1 -bottom-1 bg-gradient-to-r from-gold to-gold-light rounded-2xl opacity-20 -z-10;
+.service-card-hover {
+    @apply hover:shadow-2xl hover:-translate-y-2;
 }
 
 /* Video Cards */
 .video-card {
-    @apply bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1;
+    @apply bg-cream rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1;
 }
 
 /* Form Elements */
@@ -124,6 +148,55 @@ html {
     animation: fadeInUp 0.6s ease-out;
 }
 
+/* Enhanced Service Card Styling */
+.service-card-hover {
+    @apply hover:shadow-2xl hover:-translate-y-2;
+}
+
+/* Golden Border Effect for Featured Card */
+.border-gold {
+    border-color: var(--gold);
+}
+
+/* Enhanced Button Styling */
+.btn-gradient {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+}
+
+/* Enhanced Typography */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+/* Enhanced Form Styling */
+.form-input-enhanced {
+    @apply w-full px-4 py-3 border border-gold/20 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent transition-all duration-200 bg-cream text-deep-charcoal;
+}
+
+.form-input-enhanced:focus {
+    @apply outline-none ring-2 ring-gold ring-opacity-50;
+}
+
+/* New gradient and hero styles */
+.bg-gradient-gold {
+    background: linear-gradient(135deg, #E6B73A 0%, #F4D03F 100%);
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2C3E50 100%);
+}
+
+/* Enhanced service card hover effects */
+.service-card-hover {
+    transition: all 0.3s ease;
+}
+
+.service-card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
 /* Loading States */
 .btn-primary:disabled {
     @apply opacity-50 cursor-not-allowed;
@@ -181,6 +254,28 @@ html {
     /* You can add dark mode styles here if desired */
 }
 
+/* Image Enhancements */
+.hero-background {
+    filter: brightness(0.7);
+}
+
+.profile-image {
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.family-image {
+    transition: all 0.3s ease;
+}
+
+.family-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
@@ -208,4 +303,24 @@ html {
 ::-moz-selection {
     background: var(--gold);
     color: white;
+}
+
+/* Ensure proper text contrast on light backgrounds */
+.bg-cream .text-deep-charcoal,
+.bg-white .text-deep-charcoal {
+    color: var(--deep-charcoal);
+}
+
+.bg-cream .text-warm-gray,
+.bg-white .text-warm-gray {
+    color: var(--warm-gray);
+}
+
+/* Testimonials section specific styling */
+#testimonials .text-deep-charcoal {
+    color: var(--deep-charcoal);
+}
+
+#testimonials .text-warm-gray {
+    color: var(--warm-gray);
 }
